@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func confirmButton(sender: AnyObject) {
         if channelNameTextField.text == "" {
-            let alertController = UIAlertController(title: "Поле ввода ключа не может быть пустым!", message:"Введите код активации терминала", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Название YouTube канала не введено", message:"Введите название YoutTube канала", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
